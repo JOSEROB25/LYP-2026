@@ -1,0 +1,32 @@
+📦 continuar = 1
+🔁 continuar > 0 👉 {
+    🖨️ "=== MENU FIBONACCI ==="
+    🖨️ "1. Generar serie"
+    🖨️ "2. Salir"
+    ⌨️ opcion
+
+    🤔 opcion 🟰 1 👉 {
+        🖨️ "Cuantos terminos quieres generar?"
+        ⌨️ cantidad
+        🤔 cantidad > 0 👉 {
+            📦 anterior = 0
+            📦 actual = 1
+            🔄 cantidad {
+                🖨️ anterior
+                📦 siguiente = anterior ➕ actual
+                📦 anterior = actual
+                📦 actual = siguiente
+            }
+        }
+        🙅 {
+            🖨️ "Escribe un numero mayor que cero."
+        }
+    }
+    🙅 opcion 🟰 2 👉 {
+        📦 continuar = 0
+        🖨️ "Hasta luego"
+    }
+    🙅 {
+        🖨️ "Opcion no valida. Elige 1 o 2."
+    }
+}

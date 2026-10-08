@@ -1,0 +1,15 @@
+📝 Pide un nombre con mayuscula y un apellido
+📦 valido = falso
+
+🔂 ❌ valido {
+    ⌨️ nombre
+    ✅ 🔠 nombre {
+        📦 valido = verdadero
+    }
+    ❌ 🔠 nombre {
+        🖨️ "El nombre debe empezar con mayuscula. Intentalo otra vez."
+    }
+}
+
+⌨️ apellido
+🖨️ "Nombre completo: " ➕ nombre ➕ " " ➕ apellido

@@ -1,0 +1,8 @@
+📝 Programa base de EmojiLang
+📦 nombre = "universidad"
+🖨️ "Hola, " ➕ nombre
+
+📦 numero = 7
+✅ numero 🟰 7 {
+    🖨️ "El numero es siete"
+}
